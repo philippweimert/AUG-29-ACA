@@ -32,7 +32,7 @@ const Header = () => {
           <div className="flex-shrink-0 mr-16">
             <Link to="/" className="flex items-center group smooth-slide py-2">
               <img 
-                src="/acencia-logo-new.png" 
+                src={process.env.PUBLIC_URL + '/acencia-logo-new.png'}
                 alt="ACENCIA - Wir machen bAV einfach" 
                 className="h-12 w-auto object-contain transition-all duration-400 group-hover:scale-105"
               />
