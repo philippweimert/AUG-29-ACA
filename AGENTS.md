@@ -118,6 +118,19 @@ If everything works as expected, no external integration will be necessary.
 
 ---
 
+## Frontend Design System
+
+A complete visual overhaul has been implemented. All frontend development **must** adhere to the new design system.
+
+- **Primary Documentation**: Before making any UI changes, you **must** read the new design system documentation located in `README_DESIGN.md`.
+- **Use Design Tokens**: All styling (colors, fonts, spacing, etc.) is controlled by design tokens (CSS variables). **Never use hardcoded style values** (e.g., `color: #ffffff`). Instead, use the appropriate Tailwind utility class (e.g., `bg-background`, `text-primary`) which are mapped to these tokens. The tokens are defined in `frontend/src/styles/tokens.css`.
+- **Use the Style Guide**: A live, interactive style guide is available at the `/styleguide` route when running the application locally. Use it to see all available components and their correct usage.
+- **Component-Based**: The UI is built from reusable components. When you need a common UI element like a button or a card, use the existing components from `frontend/src/components/ui/`.
+
+Adhering to this system is critical for maintaining the visual consistency and maintainability of the application.
+
+---
+
 ## Change Log
 
 Please document all relevant changes to structure, logic, or functionality directly in this file.  

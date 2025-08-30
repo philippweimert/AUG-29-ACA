@@ -1,0 +1,100 @@
+:root {
+  /*
+   * =================================================================
+   *   COLOR TOKENS
+   * =================================================================
+   */
+
+  /* Brand Colors */
+  --color-primary-900: #001f3d; /* Dark Blue */
+  --color-primary-400: #88a9c3; /* Light Blue */
+  --color-primary-50: #e3ebf2;  /* Very Light Blue */
+  --color-white: #ffffff;
+
+  /* Accent Colors */
+  --color-accent-500: #fa9939; /* Orange */
+  --color-accent-100: #f8dcbf; /* Light Orange */
+
+  /* Neutral Colors (Derived from Primary Blue) */
+  --color-neutral-900: hsl(210, 20%, 15%); /* For headings and strong text */
+  --color-neutral-800: hsl(210, 15%, 25%);
+  --color-neutral-700: hsl(210, 12%, 40%); /* For body text */
+  --color-neutral-500: hsl(210, 10%, 60%); /* For secondary text, subtitles */
+  --color-neutral-300: hsl(210, 15%, 85%); /* For borders */
+  --color-neutral-200: hsl(210, 20%, 92%); /* For subtle dividers */
+  --color-neutral-100: hsl(210, 20%, 96%); /* For light backgrounds */
+  --color-neutral-50: hsl(210, 20%, 98%);  /* For off-white backgrounds */
+
+  /* Semantic Colors */
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-neutral-900);
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-700);
+  --color-text-subtle: var(--color-neutral-500);
+  --color-text-accent: var(--color-accent-500);
+  --color-border-default: var(--color-neutral-300);
+  --color-border-subtle: var(--color-neutral-200);
+  --color-surface-primary: var(--color-white);
+  --color-surface-secondary: var(--color-neutral-50);
+  --color-surface-band: var(--color-primary-50); /* For alternating background bands */
+  --color-cta-background: var(--color-accent-500);
+  --color-cta-text: var(--color-white);
+  --color-focus-ring: var(--color-primary-900);
+
+  /*
+   * =================================================================
+   *   TYPOGRAPHY TOKENS
+   * =================================================================
+   */
+  --font-display: "Tenor Sans", "Helvetica Neue", system-ui, sans-serif;
+  --font-body: "Open Sans", "Helvetica Neue", system-ui, sans-serif;
+
+  /*
+   * =================================================================
+   *   SPACING & SIZING TOKENS
+   * =================================================================
+   */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 32px;
+  --spacing-8: 40px;
+  --spacing-9: 48px;
+  --spacing-10: 64px;
+  --container-max-width: 1280px;
+  --container-gutter: var(--spacing-6); /* 24px */
+
+  /*
+   * =================================================================
+   *   BORDER RADIUS TOKENS
+   * =================================================================
+   */
+  --radius-sm: 6px;
+  --radius-base: 8px;
+  --radius-lg: 12px;
+  --radius-focus-ring: 2px;
+
+  /*
+   * =================================================================
+   *   SHADOW TOKENS
+   * =================================================================
+   */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /*
+   * =================================================================
+   *   MOTION TOKENS
+   * =================================================================
+   */
+  --duration-short: 120ms;
+  --duration-base: 240ms;
+  --duration-long: 400ms;
+  --ease-out: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in: cubic-bezier(0.5, 0, 0.75, 0);
+  --ease-in-out: cubic-bezier(0.5, 0, 0.5, 1);
+}

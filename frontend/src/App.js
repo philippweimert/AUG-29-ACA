@@ -5,6 +5,7 @@ import Homepage from "./components/Homepage";
 import AboutPage from "./components/AboutPage";
 import ServiceTeamPage from "./components/ServiceTeamPage";
 import ContactPage from "./components/ContactPage";
+import StyleguidePage from "./components/StyleguidePage";
 
 import PrivacyPage from "./components/PrivacyPage";
 import ImprintPage from "./components/ImprintPage";
@@ -46,6 +47,7 @@ function App() {
           <Route path="/datenschutz" element={<PrivacyPage />} />
           <Route path="/datenschutzerklaerung" element={<PrivacyPage />} />
           <Route path="/impressum" element={<ImprintPage />} />
+          <Route path="/styleguide" element={<StyleguidePage />} />
         </Routes>
         <Toaster />
       </BrowserRouter>
