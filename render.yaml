@@ -9,6 +9,3 @@ services:
       npm install
       npm run build
     startCommand: "gunicorn -k uvicorn.workers.UvicornWorker backend.server:app"
-    envVars:
-      - key: CORS_ORIGINS
-        value: "https://*.acencia.de,https://acencia.de"

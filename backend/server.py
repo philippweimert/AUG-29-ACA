@@ -109,7 +109,7 @@ async def serve_react_app(catchall: str):
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
-    allow_origins=os.environ.get('CORS_ORIGINS', '*').split(','),
+    allow_origins=["https://*.acencia.de", "https://acencia.de"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
